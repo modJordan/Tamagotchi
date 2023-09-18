@@ -24,11 +24,11 @@ namespace Tamagotchi.Models
       AttentionStatus = attentionStatus;
       RestStatus = restStatus;
       _instance = this;
-     
-     _foodTimer = new Timer(30000);
-     _foodTimer.Elapsed += Hunger;
-     _foodTimer.AutoReset = true;
-     _foodTimer.Enabled = true;
+
+      _foodTimer = new Timer(30000);
+      _foodTimer.Elapsed += Hunger;
+      _foodTimer.AutoReset = true;
+      _foodTimer.Enabled = true;
     }
 
     public static Pets GetInstance()
@@ -40,9 +40,10 @@ namespace Tamagotchi.Models
 
       if (FoodStatus > 0)
       {
-        FoodStatus -=1;
+        FoodStatus -= 1;
       }
-      else{
+      else
+      {
         FoodStatus = 0;
         IsAlive = false;
         _foodTimer.Stop();
@@ -53,14 +54,14 @@ namespace Tamagotchi.Models
     {
       if (IsAlive)
       {
-        FoodStatus +=1;
+        FoodStatus += 1;
       }
     }
 
     public int GetHunger()
     {
       Pets newPet = GetInstance();
-      if(newPet != null)
+      if (newPet != null)
       {
         return newPet.FoodStatus;
       }
