@@ -47,8 +47,8 @@ namespace Tamagotchi.Controllers
         return RedirectToAction("NoPet");
       }
     }
-    [HttpGet("/pet/food")]
-    public ActionResult Food()
+    [HttpGet("/pet/love")]
+    public ActionResult Attention()
     {
       Pets petFood = Pets.GetInstance();
       if (petFood == null)
@@ -56,6 +56,21 @@ namespace Tamagotchi.Controllers
         return RedirectToAction("Explanation");
       }
       return View("Food", petFood);
+    }
+
+    [HttpPost("/pet/love")]
+    public ActionResult GiveAttention()
+    {
+      Pets petLove = Pets.GetInstance();
+      if (petLove != null)
+      {
+        petLove.GiveLove();
+        return RedirectToAction("Index");
+      }
+      else
+      {
+        return RedirectToAction("Explanation");
+      }
     }
   }
 }

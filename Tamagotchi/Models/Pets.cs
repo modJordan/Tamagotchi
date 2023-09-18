@@ -57,16 +57,38 @@ namespace Tamagotchi.Models
       }
     }
 
-    public int GetHunger()
+    public int GetLove()
     {
       Pets newPet = GetInstance();
       if(newPet != null)
       {
-        return newPet.FoodStatus;
+        return newPet.AttentionStatus;
       }
       else
       {
         return 0;
+      }
+    }
+
+    private void Love(object sender, ElapsedEventArgs e)
+    {
+
+      if (AttentionStatus > 0)
+      {
+        AttentionStatus -=1;
+      }
+      else{
+        AttentionStatus = 0;
+        IsAlive = false;
+        _foodTimer.Stop();
+      }
+    }
+
+    public void GiveLove()
+    {
+      if (IsAlive)
+      {
+        AttentionStatus +=1;
       }
     }
 

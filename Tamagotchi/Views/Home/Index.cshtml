@@ -1,3 +1,5 @@
+@model Tamagotchi.Models.Pets
+
 <!DOCTYPE html>
 <html>
 
@@ -16,6 +18,17 @@
   <a href="/pet">Go to your pet</a>
   <br>
   <a href="/pet/food">Feed your pet</a>
+
+  @if (@Model != null)
+  {
+    <h2>Your Pet's Status</h2>
+    <ul>
+      <li>Name: @Model.Name</li>
+      <li>Hunger Status: @Model.FoodStatus</li>
+      <li>Attention: @Model.AttentionStatus</li>
+      <li>Rest Status: @Model.RestStatus</li>
+    </ul>
+  }
 </body>
 
 </html>

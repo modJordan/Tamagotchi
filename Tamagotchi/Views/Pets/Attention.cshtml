@@ -1,0 +1,23 @@
+@model Tamagotchi.Models.Pets
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pet Attention Status</title>
+</head>
+
+<body>
+  <h1>Your Pet's Attention status:</h1>
+  <ul>
+    <li>@Model.Name (Food: @Model.AttentionStatus)</li>
+  </ul>
+  <form action="/pet/love" method="post">
+    <h1>Want to give your pet some love?</h1>
+    <button type="submit" formmethod="post">Feed your pet</button>
+  </form>
+  <a href="/">Go home!</a>
+</body>
+
+</html>
