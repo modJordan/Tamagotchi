@@ -1,0 +1,19 @@
+@model Tamagotchi.Models.Pets
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>View Your Pet</title>
+</head>
+
+<body>
+  <h1>Your Pet</h1>
+  <ul>
+    <li>@Model.Name (Food: @Model.FoodStatus, Attention: @Model.AttentionStatus, Rest: @Model.RestStatus)</li>
+  </ul>
+  <a href="/">Go home!</a>
+</body>
+
+</html>
