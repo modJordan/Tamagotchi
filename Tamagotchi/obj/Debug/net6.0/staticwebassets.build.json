@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yMaF23C4jVHbdOo3f4vp7+bGfvjO/jwcXkVjxW8CaW4=",
+  "Hash": "afetGlJlWPp/kGjBxomcMYz/lsfkY9Jc/elg6ko1AU4=",
   "Source": "Tamagotchi",
   "BasePath": "_content/Tamagotchi",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/chicken.png"
+    },
+    {
+      "Identity": "/Users/modfoxu/Desktop/Epicodus/practice/Tamagotchi.Solution/Tamagotchi/wwwroot/images/chickies.png",
+      "SourceId": "Tamagotchi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/modfoxu/Desktop/Epicodus/practice/Tamagotchi.Solution/Tamagotchi/wwwroot/",
+      "BasePath": "_content/Tamagotchi",
+      "RelativePath": "images/chickies.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/chickies.png"
+    },
+    {
+      "Identity": "/Users/modfoxu/Desktop/Epicodus/practice/Tamagotchi.Solution/Tamagotchi/wwwroot/images/Chickies2.png",
+      "SourceId": "Tamagotchi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/modfoxu/Desktop/Epicodus/practice/Tamagotchi.Solution/Tamagotchi/wwwroot/",
+      "BasePath": "_content/Tamagotchi",
+      "RelativePath": "images/Chickies2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Chickies2.png"
     },
     {
       "Identity": "/Users/modfoxu/Desktop/Epicodus/practice/Tamagotchi.Solution/Tamagotchi/wwwroot/images/Cow.png",

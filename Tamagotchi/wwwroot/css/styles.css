@@ -3,26 +3,26 @@
   /* Width of one frame */
   height: 15px;
   /* Height of the sprite */
-  background-image: url('/images/chicken.png');
+  background-image: url('/images/Chickies2.png');
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0px 0px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
-  animation: peck 0.5s dips(6) infinite;
+  /* animation: peck 1s steps(14) infinite; */
 }
 
 h1 {
   font-family: 'Lobster', cursive;
 }
 
-@keyframes peck
-{
+/* @keyframes peck {
   0% {
     background-position: 0 0;
   }
+
   100% {
-    background-position: 0 -315px;
+    background-position: 0 -180px;
   }
-}
+} */
