@@ -1,3 +1,4 @@
+/Users/modfoxu/Desktop/Epicodus/practice/Tamagotchi.Solution/Tamagotchi/bin/Debug/net6.0/Tamagotchi.staticwebassets.runtime.json
 /Users/modfoxu/Desktop/Epicodus/practice/Tamagotchi.Solution/Tamagotchi/bin/Debug/net6.0/Tamagotchi
 /Users/modfoxu/Desktop/Epicodus/practice/Tamagotchi.Solution/Tamagotchi/bin/Debug/net6.0/Tamagotchi.deps.json
 /Users/modfoxu/Desktop/Epicodus/practice/Tamagotchi.Solution/Tamagotchi/bin/Debug/net6.0/Tamagotchi.runtimeconfig.json

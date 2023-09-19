@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Tamagotchi
 {
@@ -11,11 +12,14 @@ namespace Tamagotchi
       builder.Services.AddControllersWithViews();
       WebApplication app = builder.Build();
       app.UseHttpsRedirection();
+      app.UseStaticFiles();
       app.UseRouting();
+
       app.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}"
+          name: "default",
+          pattern: "{controller=Home}/{action=Index}/{id?}"
       );
+
       app.Run();
     }
   }

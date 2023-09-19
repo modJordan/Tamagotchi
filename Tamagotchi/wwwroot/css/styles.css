@@ -1,0 +1,28 @@
+#sprite {
+  width: 15px;
+  /* Width of one frame */
+  height: 15px;
+  /* Height of the sprite */
+  background-image: url('/images/chicken.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  animation: peck 0.5s dips(6) infinite;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+@keyframes peck
+{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -315px;
+  }
+}
